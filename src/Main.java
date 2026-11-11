@@ -20,8 +20,8 @@ public class Main {
         List<JPanel> panels = new ArrayList<JPanel>();
 
         panels.add(new LabeledPanel("Chart", LabeledPanel.layoutType.flow, new JComponent[] { chartPanel }));
-        panels.add(new LabeledPanel("Data", LabeledPanel.layoutType.flow, new JComponent[] { new DataPanel() }));
-        panels.add(new LabeledPanel("Mood", LabeledPanel.layoutType.flow, new JComponent[] { moodPanel }));
+        //panels.add(new LabeledPanel("Data", LabeledPanel.layoutType.flow, new JComponent[] { new DataPanel() }));
+        panels.add(new LabeledPanel("Values", LabeledPanel.layoutType.flow, new JComponent[] { moodPanel }));
 
         for (int i = 0; i < panels.size(); i++){
             frame.add(panels.get(i));
